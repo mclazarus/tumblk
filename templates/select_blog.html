@@ -1,0 +1,14 @@
+{% if error %}
+    <h1>An error was encountered</h1>
+    <p>error: {{ error }}</p>
+{% else %}
+    <h1>Select the blog under your account you want to add blocks for</h1>
+    <ul>
+    {% for blog in blogs %}
+        <li><a href="/set_blog?blog={{ blog }}">{{ blog }}</a></li>
+    {% endfor %}
+    </ul>
+{% endif %}
+
+<p>the following link will make me forget the auth from my session</p>
+<a href="/logout">logout</a>

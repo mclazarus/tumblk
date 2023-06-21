@@ -1,0 +1,10 @@
+<ul>
+{% for blog, result in results %}
+    <li>{{ blog }}: {{ 'Success' if result else 'Failure' }}</li>
+{% endfor %}
+</ul>
+
+<a href="/block">block more</a>
+<p>the following link will make me forget the auth from my session</p>
+<a href="/logout">logout</a>
+
