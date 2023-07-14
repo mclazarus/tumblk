@@ -59,7 +59,7 @@ def block():
             clean_blog = blog.strip()
             if clean_blog and clean_blog not in clean_blogs and clean_blog != "":
                 clean_blogs.append(clean_blog.strip())
-        print(f'trying to block {len(clean_blogs)} blogs)')
+        print(f'trying to block {len(clean_blogs)} blog(s)')
         results = []
         for blog_group in chunker(clean_blogs, 50):
             result = block_blogs(selected_blog, blog_group)
