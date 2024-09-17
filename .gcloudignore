@@ -20,3 +20,4 @@ __pycache__/
 
 # ignore the python virtual env
 .venv
+venv
